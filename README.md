@@ -2,6 +2,10 @@
 
 At some point, I'll think of something clever and/or useful to put here. For now, it's just here to say hello.
 
+And, here's a Mastodon link. The `rel="me"` thing is annoying, but I get it.
+
+    <a rel="me" href="https://masto.ai/@claylo">:eyeroll:</a>
+
 <!--
 **claylo/claylo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
