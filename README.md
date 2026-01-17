@@ -20,9 +20,3 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<table border="0">
-  <tr>
-    <td>No</td>
-    <td>borders</td>
-  </tr>
-</table>
