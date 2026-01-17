@@ -1,0 +1,84 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header { 
+      font-family: 'Courier New', monospace; 
+      font-size: 11px; 
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      fill: #1a1a1a;
+    }
+    .link { 
+      font-family: 'Courier New', monospace; 
+      font-size: 13px; 
+      fill: #0969da; 
+      text-decoration: none;
+    }
+    .link:hover { fill: #0550ae; }
+    .date { 
+      font-family: 'Courier New', monospace; 
+      font-size: 11px; 
+      fill: #656d76;
+    }
+    .separator {
+      stroke: #d0d7de;
+      stroke-width: 0.5;
+    }
+  </style>
+  
+  <!-- Column 1: Recent -->
+  <text x="40" y="40" class="header">RECENT</text>
+  <line x1="40" y1="48" x2="95" y2="48" class="separator"/>
+  
+  <a href="https://github.com/claylo/project1/releases/tag/0.3">
+    <text x="40" y="75" class="link">project-one 0.3</text>
+  </a>
+  <text x="40" y="90" class="date">2025-01-15</text>
+  
+  <a href="https://github.com/claylo/project2/releases/tag/0.1">
+    <text x="40" y="120" class="link">another-tool 0.1</text>
+  </a>
+  <text x="40" y="135" class="date">2025-01-12</text>
+  
+  <a href="https://github.com/claylo/project3/releases/tag/1.0">
+    <text x="40" y="165" class="link">third-thing 1.0</text>
+  </a>
+  <text x="40" y="180" class="date">2025-01-08</text>
+  
+  <!-- Column 2: Blog -->
+  <text x="300" y="40" class="header">WRITING</text>
+  <line x1="300" y1="48" x2="362" y2="48" class="separator"/>
+  
+  <a href="https://lovelesslabs.com/post1">
+    <text x="300" y="75" class="link">On conventional commits</text>
+  </a>
+  <text x="300" y="90" class="date">2025-01-14</text>
+  
+  <a href="https://lovelesslabs.com/post2">
+    <text x="300" y="120" class="link">Rust CLI patterns</text>
+  </a>
+  <text x="300" y="135" class="date">2025-01-10</text>
+  
+  <a href="https://lovelesslabs.com/post3">
+    <text x="300" y="165" class="link">MCP server architecture</text>
+  </a>
+  <text x="300" y="180" class="date">2025-01-05</text>
+  
+  <!-- Column 3: TIL -->
+  <text x="560" y="40" class="header">LEARNED</text>
+  <line x1="560" y1="48" x2="632" y2="48" class="separator"/>
+  
+  <a href="https://til.lovelesslabs.com/rust/cargo-test">
+    <text x="560" y="75" class="link">cargo nextest filters</text>
+  </a>
+  <text x="560" y="90" class="date">2025-01-13</text>
+  
+  <a href="https://til.lovelesslabs.com/git/hooks">
+    <text x="560" y="120" class="link">Git hooks for cocogitto</text>
+  </a>
+  <text x="560" y="135" class="date">2025-01-09</text>
+  
+  <a href="https://til.lovelesslabs.com/claude/mcp">
+    <text x="560" y="165" class="link">MCP server debugging</text>
+  </a>
+  <text x="560" y="180" class="date">2025-01-04</text>
+</svg>
