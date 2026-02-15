@@ -1,10 +1,6 @@
----
-title: "Hello, World"
-description: "First post from the new workbench."
-date: 2025-01-31
----
+# Hello Again, World
 
-The site is live. Built with Astro, styled with Tailwind v4, running on the claylo brand system.
+The site is live. Built with Astro, styled with Tailwind v4, running on claylo.dev.
 
 ## What's here
 
@@ -12,6 +8,7 @@ A place to write about:
 
 - Rust development
 - CLI tools
+- Generalized nerding
 - Open source projects
 - Whatever else comes up at 2am
 
@@ -22,7 +19,7 @@ This site uses:
 - **Astro** — static site generation
 - **Tailwind v4** — CSS-first configuration
 - **Berkeley Mono** — custom font cuts (LL01Display, LL02Code, LL03Text, LL04Caption)
-- **MDX** — markdown with components
+- **Markdown** — plain Markdown with some build-time sugar sprinkled on top.
 
 ### A taste of Rust
 

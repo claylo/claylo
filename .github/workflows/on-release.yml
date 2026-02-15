@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger build in dev repo
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.DEV_REPO_PAT }}
           repository: claylo/dev
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: trigger-build
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Update README with latest posts
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
             fs.writeFileSync('README.md', readme);
 
       - name: Commit README update
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "Update latest posts"
           file_pattern: README.md
