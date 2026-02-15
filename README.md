@@ -6,6 +6,11 @@ And, here's a Mastodon link. The `rel="me"` thing is annoying, but I get it.
 
     <a rel="me" href="https://masto.ai/@claylo">:eyeroll:</a>
 
+### Latest Posts
+
+<!-- LATEST_POSTS -->
+<!-- /LATEST_POSTS -->
+
 <!--
 **claylo/claylo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
