@@ -34,7 +34,7 @@ jobs:
 
             const posts = releases
               .filter(r => !r.draft && !r.prerelease)
-              .map(r => `- [${r.name}](https://claylo.dev/blog/${r.tag_name}) — ${new Date(r.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`)
+              .map(r => `- [${r.name}](https://claylo.dev/articles/${r.tag_name}) — ${new Date(r.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`)
               .join('\n');
 
             const fs = require('fs');
