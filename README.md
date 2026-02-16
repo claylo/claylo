@@ -9,6 +9,7 @@ And, here's a Mastodon link. The `rel="me"` thing is annoying, but I get it.
 ### Latest Posts
 
 <!-- LATEST_POSTS -->
+
 <!-- /LATEST_POSTS -->
 
 <!--
