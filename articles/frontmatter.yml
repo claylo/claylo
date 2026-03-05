@@ -6,6 +6,7 @@
     - "php"
   original_url: "https://web.archive.org/web/20030801195431/http://killersoft.com/news.html?a=1225"
   draft: true
+  readingTime: "1 min read"
 
 2002-05-21-validateemail-2.0-released.md:
   description: "A much-needed update to the old validateEmail function hits the streets."
@@ -14,6 +15,7 @@
     - "killersoft"
     - "php"
   draft: true
+  readingTime: "1 min read"
 
 2002-05-21-validateemailformat-1.0-released.md:
   description: "Jeffrey E.F. Friedl's definitive Email Regex Perl script translated to PHP"
@@ -23,6 +25,7 @@
     - "php"
   original_url: "https://web.archive.org/web/20030801195352/http://killersoft.com/news.html?a=1224"
   draft: true
+  readingTime: "1 min read"
 
 2002-07-18-cli.php-updated.md:
   description: "Updates to feature-parity with CLI.pm 2.4.9"
@@ -31,6 +34,7 @@
     - "killersoft"
   original_url: "https://web.archive.org/web/20030801200053/http://killersoft.com/news.html?a=1226"
   draft: true
+  readingTime: "1 min read"
 
 2002-11-26-authorize.net-payment-module-for-x-cart-1.0-released.md:
   description: "Module supports ADC & AIM connections, many new features"
@@ -40,6 +44,7 @@
     - "php"
   original_url: "https://web.archive.org/web/20030801200128/http://killersoft.com/news.html?a=1229"
   draft: true
+  readingTime: "1 min read"
 
 2002-12-04-cli.php-updated-to-1.0b4.md:
   description: "Update brings feature-parity with CLI.pm 2.6.0"
@@ -49,18 +54,20 @@
     - "php"
   original_url: "https://web.archive.org/web/20030801180108/http://killersoft.com/news.html?a=1239"
   draft: true
+  readingTime: "1 min read"
 
 2005-03-05-pearified.com-launched.md:
-  description: ""
+  description: "Launching a new PEAR-compatible channel server for packages that should have been easy to install all along."
   date: 2005-03-05
   tags:
     - "killersoft"
     - "php"
   original_url: "https://web.archive.org/web/20050405162300/http://www.killersoft.com/archives/2-Pearified.com-Launched.html"
   draft: true
+  readingTime: "1 min read"
 
 2005-07-01-change-your-life-with-version-control.md:
-  description: ""
+  description: "A ground-up introduction to Subversion for PHP developers who've been putting it off."
   date: 2005-07-01
   tags:
     - "subversion"
@@ -71,9 +78,10 @@
   draft: true
   type: "article"
   publication: "php|architect"
+  readingTime: "26 min read"
 
 2005-07-23-fashionably-late.md:
-  description: ""
+  description: "First blog post. Better late than never."
   date: 2005-07-23
   tags:
     - "killersoft"
@@ -81,9 +89,10 @@
     - "php-architect"
   original_url: "https://web.archive.org/web/20051219055628/http://www.killersoft.com/randomstrings/2005/07/23/1-Fashionably-Late.html"
   draft: true
+  readingTime: "1 min read"
 
 2005-08-01-release-your-next-project-as-a-pear-140-package.md:
-  description: ""
+  description: "How to turn any PHP application into a PEAR 1.4.0 installable package, phpMyAdmin included."
   date: 2005-08-01
   tags:
     - "pear"
@@ -94,9 +103,10 @@
   draft: true
   type: "article"
   publication: "php|architect"
+  readingTime: "26 min read"
 
 2005-08-03-pearified-progress.md:
-  description: ""
+  description: "New JavaScript packages, PEAR-installable phpMyAdmin coming soon, and a packaging routine that actually works."
   date: 2005-08-03
   tags:
     - "killersoft"
@@ -105,9 +115,10 @@
     - "pear"
   original_url: "https://web.archive.org/web/20051214095529/http://www.killersoft.com/randomstrings/2005/08/03/2-Pearified-Progress.html"
   draft: true
+  readingTime: "1 min read"
 
 2005-08-11-pear-channel-directory.md:
-  description: ""
+  description: "A directory of PEAR channels, open for submissions on Pearified.com."
   date: 2005-08-11
   tags:
     - "killersoft"
@@ -116,9 +127,10 @@
     - "pear"
   original_url: "https://web.archive.org/web/20051214100313/http://www.killersoft.com/randomstrings/2005/08/11/3-PEAR-Channel-Directory.html"
   draft: true
+  readingTime: "1 min read"
 
 2005-08-12-pearfied-planet-rss-feed-available.md:
-  description: ""
+  description: "An aggregated RSS feed of package releases across all known PEAR channels."
   date: 2005-08-12
   tags:
     - "killersoft"
@@ -127,9 +139,10 @@
     - "pear"
   original_url: "https://web.archive.org/web/20051214090537/http://www.killersoft.com/randomstrings/2005/08/12/4-Pearfied-Planet-RSS-Feed-Available.html"
   draft: true
+  readingTime: "1 min read"
 
 2005-08-22-release-your-next-project-as-a-pear-1.4.0-package.md:
-  description: ""
+  description: "Announcing the php|architect article on PEAR 1.4.0 packaging, with a real phpMyAdmin release to follow."
   date: 2005-08-22
   tags:
     - "killersoft"
@@ -139,9 +152,10 @@
     - "pearified"
   original_url: "https://web.archive.org/web/20051214085603/http://www.killersoft.com/randomstrings/2005/08/22/5-Release-Your-Next-Project-as-a-PEAR-1.4.0-Package.html"
   draft: true
+  readingTime: "2 min read"
 
 2005-08-27-pear-installable-phpmyadmin-released.md:
-  description: ""
+  description: "phpMyAdmin 2.6.3-pl1 is now PEAR-installable via Pearified.com."
   date: 2005-08-27
   tags:
     - "killersoft"
@@ -152,9 +166,10 @@
     - "pear"
   original_url: "https://web.archive.org/web/20051217010830/http://www.killersoft.com/randomstrings/2005/08/27/6-PEAR-installable-phpMyAdmin-Released.html"
   draft: true
+  readingTime: "1 min read"
 
 2005-10-19-why-php-will-never-have-rails.md:
-  description: ""
+  description: "PHP has too many cooks and too much history for any one framework to unify the community like Rails did."
   date: 2005-10-19
   tags:
     - "killersoft"
@@ -166,9 +181,10 @@
     - "cakephp"
     - "greatest-hits"
   original_url: "https://web.archive.org/web/20060102131106/http://www.killersoft.com/randomstrings/2005/10/19/7-Why-PHP-Will-Never-Have-Rails.html"
+  readingTime: "3 min read"
 
 2005-11-10-switching-pains-bbedit-8-to-zend-studio-5.md:
-  description: ""
+  description: "A decade of BBEdit muscle memory meets the Zend Studio learning curve."
   date: 2005-11-10
   tags:
     - "killersoft"
@@ -178,9 +194,10 @@
     - "zend"
   original_url: "https://web.archive.org/web/20090414104025/http://www.killersoft.com/randomstrings/2005/11/10/switching-pains-bbedit-8-to-zend-studio-5"
   draft: true
+  readingTime: "2 min read"
 
 2005-11-12-subversion-wrapper-for-zend-studio-5.md:
-  description: ""
+  description: "A PHP wrapper script to fix Zend Studio 5's broken Subversion commit messages."
   date: 2005-11-12
   tags:
     - "killersoft"
@@ -192,9 +209,10 @@
     - "contains-source"
   original_url: "https://web.archive.org/web/20090105185141/http://killersoft.com/randomstrings/2005/11/12/subversion-wrapper-for-zend-studio-5/"
   draft: true
+  readingTime: "3 min read"
 
 2005-11-30-simpletest-100-on-pearifiedcom.md:
-  description: ""
+  description: "SimpleTest 1.0.0 is up on Pearified, and more packages are on the way."
   date: 2005-11-30
   tags:
     - "killersoft"
@@ -203,9 +221,10 @@
     - "pearified"
   original_url: "https://web.archive.org/web/20071117092329/http://killersoft.com/randomstrings/2005/11/30/simpletest-100-on-pearifiedcom/"
   draft: true
+  readingTime: "1 min read"
 
 2005-12-02-coal-and-switches-in-zends-stocking-this-year.md:
-  description: ""
+  description: "Zend Studio can't handle PHP 5.1.1 or Firefox 1.5, and The PHP Company doesn't seem to care."
   date: 2005-12-02
   tags:
     - "killersoft"
@@ -216,9 +235,10 @@
     - "santa"
   original_url: "https://web.archive.org/web/20061112195826/http://killersoft.com/randomstrings/2005/12/02/coal-and-switches-in-zends-stocking-this-year/"
   draft: true
+  readingTime: "2 min read"
 
 2005-12-19-a-call-for-feedback.md:
-  description: ""
+  description: "Proposing a /webpear convention for PEAR-installed frontend packages."
   date: 2005-12-19
   tags:
     - "killersoft"
@@ -228,9 +248,10 @@
     - "front-end"
   original_url: "https://web.archive.org/web/20060603034052/http://www.killersoft.com/randomstrings/2005/12/19/a-call-for-feedback/"
   draft: true
+  readingTime: "2 min read"
 
 2005-12-19-let-there-be-good-looking-applications.md:
-  description: ""
+  description: "Tango Desktop Project icons, now PEAR-installable for your applications."
   date: 2005-12-19
   tags:
     - "killersoft"
@@ -239,9 +260,10 @@
     - "pearified"
   original_url: "https://web.archive.org/web/20060603034134/http://www.killersoft.com/randomstrings/2005/12/19/let-there-be-good-looking-applications/"
   draft: true
+  readingTime: "2 min read"
 
 2005-12-29-several-new-pearified-packages.md:
-  description: ""
+  description: "Batch update: Role_Web support, updated JS packages, TinyMCE, Silk icons, and Tooltip land on Pearified."
   date: 2005-12-29
   tags:
     - "killersoft"
@@ -251,9 +273,10 @@
     - "front-end"
   original_url: "https://web.archive.org/web/20060603034109/http://www.killersoft.com/randomstrings/2005/12/29/several-new-pearified-packages/"
   draft: true
+  readingTime: "2 min read"
 
 2006-01-14-savant-gets-pearified.md:
-  description: ""
+  description: "Paul M. Jones' Savant2 and Savant3 templates now available via their own Pearified sub-channel."
   date: 2006-01-14
   tags:
     - "killersoft"
@@ -263,9 +286,10 @@
     - "savant"
   original_url: "https://web.archive.org/web/20060602231743/http://www.killersoft.com/randomstrings/2006/01/14/savant-gets-pearified/"
   draft: true
+  readingTime: "1 min read"
 
 2006-02-16-blog-overhaul-in-progress.md:
-  description: ""
+  description: "Switched from Serendipity to WordPress; site redesign in the works with Matt Brett."
   date: 2006-02-16
   tags:
     - "killersoft-news"
@@ -275,9 +299,10 @@
     - "brrrreeeport"
   original_url: "https://web.archive.org/web/20060603062301/http://www.killersoft.com/randomstrings/2006/02/16/blog-overhaul-in-progress/"
   draft: true
+  readingTime: "1 min read"
 
 2006-02-16-feedster-gains-some-killersoft.md:
-  description: ""
+  description: "Joined Feedster as Senior Software Engineer and rewrote their entire PHP frontend in PHP 5."
   date: 2006-02-16
   tags:
     - "killersoft"
@@ -288,24 +313,24 @@
     - "work"
   original_url: "https://web.archive.org/web/20060524142346/http://www.killersoft.com/randomstrings/2006/02/16/feedster-gains-some-killersoft/"
   draft: true
+  readingTime: "2 min read"
 
 2006-02-16-walk-the-walk-before-talking-the-talk.md:
-  description: ""
+  description: "Professional development is about discipline and humility, not frameworks and flame wars."
   date: 2006-02-16
   tags:
     - "php"
     - "development"
     - "feedster"
     - "ookles"
-    - "php4"
-    - "php5"
     - "technorati"
     - "work"
     - "greatest-hits"
   original_url: "https://web.archive.org/web/20090509100225/http://killersoft.com/randomstrings/2006/02/16/walk-the-walk-before-talking-the-talk"
+  readingTime: "7 min read"
 
 2006-02-17-point-counterpoint.md:
-  description: ""
+  description: "Scott Johnson pushes back on the discipline argument -- worth a listen."
   date: 2006-02-17
   tags:
     - "development"
@@ -314,9 +339,10 @@
     - "work"
   original_url: "https://web.archive.org/web/20090511174459/http://www.killersoft.com/randomstrings/2006/02/17/point-counterpoint/"
   draft: true
+  readingTime: "1 min read"
 
 2006-02-24-note-lamp-isnt-about-perl-or-python.md:
-  description: ""
+  description: "The P in LAMP stands for PHP. Always has. Stop rewriting history."
   date: 2006-02-24
   tags:
     - "php"
@@ -331,46 +357,48 @@
     - "humor"
   original_url: "https://web.archive.org/web/20090105185803/http://killersoft.com/randomstrings/2006/02/24/note-lamp-isnt-about-perl-or-python/"
   draft: true
+  readingTime: "1 min read"
 
 2006-03-08-no-sun-shine-for-killersoft.md:
-  description: ""
+  description: "Trying to get a free Sun Fire T2000 to benchmark PHP 5, but honesty on the application form backfires."
   date: 2006-03-08
   tags:
     - "killersoft"
     - "php"
-    - "php5"
-    - "php4"
     - "sun"
     - "niagra"
     - "solaris"
     - "t2000"
   original_url: "https://web.archive.org/web/20071225101623/http://killersoft.com/randomstrings/2006/03/08/no-sun-shine-for-killersoft/"
   draft: true
+  readingTime: "3 min read"
 
 2006-03-24-web-developer-toolbar-for-internet-exploder-6.md:
-  description: ""
+  description: "Microsoft finally ships a developer toolbar for IE6, and it's not terrible."
   date: 2006-03-24
   tags:
     - "css"
     - "firefox"
-    - "internet explorer"
+    - "internet-explorer"
   original_url: "https://web.archive.org/web/20071224103438/http://killersoft.com/randomstrings/2006/03/24/web-developer-toolbar-for-internet-exploder-6/"
   draft: true
+  readingTime: "1 min read"
 
 2006-03-28-prophp-podcast-follow-up.md:
-  description: ""
+  description: "Follow-up notes from the php|architect Pro::PHP Podcast appearance."
   date: 2006-03-28
   tags:
     - "pear"
     - "pearified"
-    - "php5"
+    - "php"
     - "savant"
     - "solar"
   original_url: "https://web.archive.org/web/20071225101628/http://killersoft.com/randomstrings/2006/03/28/prophp-podcast-follow-up/"
   draft: true
+  readingTime: "2 min read"
 
 2006-04-03-the-perfect-web-20-company-name.md:
-  description: ""
+  description: "A satirical formula for naming your Web 2.0 startup: pick a number, add a noun, buy the domain."
   date: 2006-04-03
   tags:
     - "branding"
@@ -378,9 +406,10 @@
     - "humor"
   original_url: "https://web.archive.org/web/20070127211314/http://www.killersoft.com/randomstrings/2006/04/03/the-perfect-web-20-company-name/"
   draft: true
+  readingTime: "2 min read"
 
 2006-04-17-on-guest-blogging.md:
-  description: ""
+  description: "If you've got nothing to say, say nothing. Don't hand your blog to someone else."
   date: 2006-04-17
   tags:
     - "blogging"
@@ -390,63 +419,68 @@
     - "commentary"
   original_url: "https://web.archive.org/web/20070120165300/http://www.killersoft.com/randomstrings/2006/04/17/on-guest-blogging/"
   draft: true
+  readingTime: "2 min read"
 
 2006-04-20-guest-blogging-is-spam.md:
-  description: ""
+  description: "Guest blog posts are unsolicited bulk messages your subscribers never asked for."
   date: 2006-04-20
   tags:
     - "blogging"
-    - "guest blogging"
-    - "blog spam"
+    - "guest-blogging"
+    - "blog-spam"
     - "commentary"
   original_url: "https://web.archive.org/web/20061104072838/http://www.killersoft.com/randomstrings/2006/04/20/guest-blogging-is-spam/"
   draft: true
+  readingTime: "2 min read"
 
 2006-04-30-thank-you-feedster.md:
-  description: ""
+  description: "Departing Feedster after eight months, grateful for the team and the rewrite."
   date: 2006-04-30
   tags:
     - "feedster"
     - "work"
   original_url: "https://web.archive.org/web/20061112195128/http://killersoft.com/randomstrings/2006/04/30/thank-you-feedster/"
   draft: true
+  readingTime: "1 min read"
 
 2006-05-01-php-513-released.md:
-  description: ""
+  description: "PHP 5.1.3 ships with FastCGI overhaul and the death of E_STRICT warnings on 'var'."
   date: 2006-05-01
   tags:
     - "e_strict"
     - "fastcgi"
     - "lighttpd"
-    - "php5"
+    - "php"
   original_url: "https://web.archive.org/web/20061112195554/http://killersoft.com/randomstrings/2006/05/01/php-513-released/"
   draft: true
+  readingTime: "1 min read"
 
 2006-05-01-rebooted.md:
-  description: ""
+  description: "New site design is live, courtesy of Matt Brett, just in time for CSS Reboot."
   date: 2006-05-01
   tags:
     - "css"
-    - "css reboot"
     - "design"
-    - "killersoft news"
-    - "matt brett"
+    - "killersoft"
+    - "matt-brett"
     - "pearified"
     - "wordpress"
   original_url: "https://web.archive.org/web/20061112195531/http://killersoft.com/randomstrings/2006/05/01/rebooted/"
   draft: true
+  readingTime: "1 min read"
 
 2006-05-03-php-513-advisory.md:
-  description: ""
+  description: "Hold off on PHP 5.1.3 -- a nasty $_POST array bug just surfaced."
   date: 2006-05-03
   tags:
     - "bugs"
-    - "php5"
+    - "php"
   original_url: "https://web.archive.org/web/20061112195251/http://killersoft.com/randomstrings/2006/05/03/php-513-advisory/"
   draft: true
+  readingTime: "1 min read"
 
 2006-06-14-stop-writing-loner-applications.md:
-  description: ""
+  description: "Your app isn't the only one on the server. Build for coexistence or get out of the way."
   date: 2006-06-14
   tags:
     - "authentication"
@@ -460,9 +494,10 @@
     - "greatest-hits"
   original_url: "https://web.archive.org/web/20061104072735/http://www.killersoft.com/randomstrings/2006/06/14/stop-writing-loner-applications/"
   draft: true
+  readingTime: "3 min read"
 
 2006-06-14-teaching-by-example.md:
-  description: ""
+  description: "Om Malik leaves Business 2.0 to start up -- now let's see if his own startup playbook holds up."
   date: 2006-06-14
   tags:
     - "37signals"
@@ -471,9 +506,10 @@
     - "startups"
     - "commentary"
   original_url: "https://web.archive.org/web/20061112193908/http://killersoft.com/randomstrings/2006/06/14/teaching-by-example/"
+  readingTime: "1 min read"
 
 2006-06-20-textmate-and-phpdoc-comment-blocks.md:
-  description: ""
+  description: "How to get Zend Studio-style phpDoc comment formatting in TextMate with a custom snippet."
   date: 2006-06-20
   tags:
     - "bbedit"
@@ -482,9 +518,10 @@
     - "zend-studio"
   original_url: "https://web.archive.org/web/20061031213152/http://www.killersoft.com/randomstrings/2006/06/20/textmate-and-phpdoc-comment-blocks/"
   draft: true
+  readingTime: "5 min read"
 
 2006-08-15-adios-zend-studio-hola-komodo-pro.md:
-  description: ""
+  description: "Eight months waiting for Intel Mac debugger support from Zend. Switching to Komodo Pro."
   date: 2006-08-15
   tags:
     - "bbedit"
@@ -494,23 +531,25 @@
     - "zend-studio"
   original_url: "https://web.archive.org/web/20061112193922/http://killersoft.com/randomstrings/2006/08/15/adios-zend-studio-hola-komodo-pro/"
   draft: true
+  readingTime: "3 min read"
 
 2006-08-15-mashery-is-hiring.md:
-  description: ""
+  description: "Mashery's first engineering hire: a PHP 5 developer who compiles their own builds and writes unit tests."
   date: 2006-08-15
   tags:
     - "mashery"
     - "mashup"
-    - "php5"
+    - "php"
     - "prototype"
     - "software-development-job"
     - "solar"
     - "web2.0"
   original_url: "https://web.archive.org/web/20061112193933/http://killersoft.com/randomstrings/2006/08/15/mashery-is-hiring/"
   draft: true
+  readingTime: "3 min read"
 
 2006-09-06-chmod-cheatsheet.md:
-  description: ""
+  description: "An interactive octal notation cheatsheet for those days when chmod math escapes you."
   date: 2006-09-06
   tags:
     - "chmod"
@@ -518,18 +557,20 @@
     - "unix"
   original_url: "https://web.archive.org/web/20061112193928/http://killersoft.com/randomstrings/2006/09/06/chmod-cheatsheet/"
   draft: true
+  readingTime: "1 min read"
 
 2006-09-18-zend-php-5-certification-me-too.md:
-  description: ""
+  description: "Passed the ZCE PHP 5 exam, and why employers should make it part of the hiring process."
   date: 2006-09-18
   tags:
     - "php-5-certification"
     - "zend"
   original_url: "https://web.archive.org/web/20061112193851/http://killersoft.com/randomstrings/2006/09/18/zend-php-5-certification-me-too/"
   draft: true
+  readingTime: "3 min read"
 
 2006-09-23-quickie-trac-notes.md:
-  description: ""
+  description: "A 33-line Trac plugin for adding JavaScript, plus CSS for PHP syntax highlighting."
   date: 2006-09-23
   tags:
     - "css"
@@ -539,9 +580,10 @@
     - "trac"
   original_url: "https://web.archive.org/web/20061112193832/http://killersoft.com/randomstrings/2006/09/23/quickie-trac-notes/"
   draft: true
+  readingTime: "2 min read"
 
 2006-09-24-php-mimeviewer-for-trac.md:
-  description: ""
+  description: "A proper PHP syntax highlighter for Trac, because the built-in one butchers docblocks."
   date: 2006-09-24
   tags:
     - "css"
@@ -551,9 +593,10 @@
     - "trac"
   original_url: "https://web.archive.org/web/20061112193843/http://killersoft.com/randomstrings/2006/09/24/php-mimeviewer-for-trac/"
   draft: true
+  readingTime: "2 min read"
 
 2006-10-25-ohloh-reports-may-paint-an-inaccurate-picture.md:
-  description: ""
+  description: "Ohloh says PHPSurveyor costs $11M to reproduce. A closer look says more like $2M."
   date: 2006-10-25
   tags:
     - "ohloh"
@@ -562,19 +605,21 @@
     - "commentary"
   original_url: "https://web.archive.org/web/20061112193858/http://killersoft.com/randomstrings/2006/10/25/ohloh-reports-may-paint-an-inaccurate-picture/"
   draft: true
+  readingTime: "2 min read"
 
 2007-01-26-amazon-ec2-ui-for-firefox.md:
-  description: ""
+  description: "A Firefox extension that puts a proper UI on EC2 admin."
   date: 2007-01-26
   tags:
     - "aws"
-    - "amazon-ec2"
+    - "ec2"
     - "firefox"
   original_url: "https://web.archive.org/web/20080229031945/http://killersoft.com/randomstrings/2007/01/26/amazon-ec2-ui-for-firefox/"
   draft: true
+  readingTime: "1 min read"
 
 2007-02-09-monitor-php-extension-releases-with-y-pipes.md:
-  description: ""
+  description: "A Yahoo Pipes aggregation of PHP extension releases that PECL misses."
   date: 2007-02-09
   tags:
     - "dbxml"
@@ -585,27 +630,26 @@
     - "yahoo-pipes"
   original_url: "https://web.archive.org/web/20080229031955/http://killersoft.com/randomstrings/2007/02/09/monitor-php-extension-releases-with-y-pipes/"
   draft: true
+  readingTime: "2 min read"
 
 2007-02-12-why-not-php-5.md:
-  description: ""
+  description: "PHP 5 has been out for three years and 80% of sites are still on PHP 4 -- what gives?"
   date: 2007-02-12
   tags:
     - "nexen"
-    - "php4"
-    - "php5"
     - "php"
     - "greatest-hits"
   original_url: "https://web.archive.org/web/20080214222342/http://killersoft.com/randomstrings/2007/02/12/why-not-php-5/"
   draft: true
+  readingTime: "18 min read"
 
 2007-02-16-rails-free-living.md:
-  description: ""
+  description: "Three more PHP frameworks nobody asked for, and a plug for Solar."
   date: 2007-02-16
   tags:
     - "frameworks"
     - "mvc"
     - "php"
-    - "php5"
     - "pipes"
     - "rails"
     - "solar"
@@ -613,21 +657,22 @@
     - "webmesh"
   original_url: "https://web.archive.org/web/20080229205517/http://killersoft.com/randomstrings/2007/02/16/rails-free-living/"
   draft: true
+  readingTime: "3 min read"
 
 2007-02-17-build-a-cool-app.md:
-  description: ""
+  description: "Stop building frameworks and start building apps with the ones that already exist."
   date: 2007-02-17
   tags:
     - "frameworks"
     - "php"
-    - "php5"
     - "stubbles"
     - "web-application-development"
   original_url: "https://web.archive.org/web/20080229205522/http://killersoft.com/randomstrings/2007/02/17/build-a-cool-app/"
   draft: true
+  readingTime: "13 min read"
 
 2007-02-28-php-and-json-cut-987.md:
-  description: ""
+  description: "PHP 5.2.1 broke JSON spec compliance on purpose, and that's a problem."
   date: 2007-02-28
   tags:
     - "json"
@@ -635,20 +680,22 @@
     - "standards"
   original_url: "https://web.archive.org/web/20080317033522/http://www.killersoft.com/randomstrings/2007/02/28/php-and-json-cut-987/"
   draft: true
+  readingTime: "14 min read"
 
 2007-07-13-hell-freezes-clip-at-eleven.md:
-  description: ""
+  description: "PHP gets a couple of long-awaited wins -- maybe a third is coming."
   date: 2007-07-13
   tags:
     - "killersoft"
     - "php"
     - "namespaces"
-    - "php4"
+    - "php"
   original_url: "https://web.archive.org/web/20080229205527/http://killersoft.com/randomstrings/2007/07/13/hell-freezes-clip-at-eleven/"
   draft: true
+  readingTime: "1 min read"
 
 2007-08-12-php-did-not-cause-facebook-code-leakage.md:
-  description: ""
+  description: "Facebook leaked source code because of a config error, not because PHP is broken."
   date: 2007-08-12
   tags:
     - "facebook"
@@ -656,36 +703,40 @@
     - "techcrunch"
     - "greatest-hits"
   original_url: "https://web.archive.org/web/20080224092722/http://killersoft.com/randomstrings/2007/08/12/php-did-not-cause-facebook-code-leakage"
+  readingTime: "8 min read"
 
 2007-09-11-free-beer-in-atlanta.md:
-  description: ""
+  description: "Mashery recruits PHP devs at php|works with free beer and a shot at an iPod Touch."
   date: 2007-09-11
   tags:
     - "mashery"
-    - "php5"
+    - "php"
     - "phpworks"
   original_url: "https://web.archive.org/web/20080229205532/http://killersoft.com/randomstrings/2007/09/11/free-beer-in-atlanta/"
+  readingTime: "2 min read"
 
 2007-09-24-include-this.md:
-  description: ""
+  description: "A deep-dive link on PHP autoloading and include performance worth reading twice."
   date: 2007-09-24
   tags:
     - "killersoft"
     - "php"
   original_url: "https://web.archive.org/web/20080229205538/http://killersoft.com/randomstrings/2007/09/24/include-this/"
   draft: true
+  readingTime: "1 min read"
 
 2009-04-02-aws-elastic-mapreduce-supports-php.md:
-  description: ""
+  description: "Amazon's Elastic MapReduce quietly supports PHP mapper and reducer scripts."
   date: 2009-04-02
   tags:
     - "aws"
     - "php"
   original_url: "https://web.archive.org/web/20090405084738/http://killersoft.com/randomstrings/2009/04/02/aws-elastic-mapreduce-supports-php"
   draft: true
+  readingTime: "1 min read"
 
 2010-10-04-operation-hackbutt.md:
-  description: ""
+  description: "Two premium ergonomic chairs at a hackathon, because crappy chairs kill output."
   date: 2010-10-04
   tags:
     - "apis"
@@ -694,9 +745,22 @@
     - "steelcase"
     - "herman-miller"
   original_url: "https://web.archive.org/web/20130301132347/http://claylo.posterous.com/blog/operation-hackbutt.html"
+  readingTime: "5 min read"
+
+2010-10-09-still-looking-for-a-blog-home.md:
+  description: "WordPress is out, Squarespace mobile sucks, and tumblr URLs are an embarrassment."
+  date: 2010-10-09
+  source: medium
+  tags:
+    - "blogging"
+    - "tumblr"
+    - "posterous"
+    - "wordpress"
+  original_url: "https://medium.com/claylo/still-looking-for-a-blog-home-4e17c1dabc4e"
+  readingTime: "1 min read"
 
 2010-10-10-my-fitbit-may-be-gone.md:
-  description: ""
+  description: "Lost my Fitbit and don't care -- no API killed the enthusiasm loop."
   date: 2010-10-10
   tags:
     - "apis"
@@ -704,27 +768,172 @@
     - "startups"
   original_url: "https://web.archive.org/web/20130301132126/http://claylo.posterous.com/my-fitbit-may-be-gone"
   draft: true
+  readingTime: "5 min read"
 
 2010-12-27-itunes-store-bandwidth-mystery.md:
-  description: ""
+  description: "iTunes downloads crawl on 50Mbps Comcast but fly on 3Mbps U-verse -- throttling much?"
   date: 2010-12-27
   tags:
     - "apple"
     - "broadband"
   original_url: "https://web.archive.org/web/20130301131808/http://claylo.posterous.com/itunes-store-bandwidth-mystery"
   draft: true
+  readingTime: "2 min read"
 
 2011-02-03-talk-more-hate-less.md:
-  description: ""
+  description: "Talk to the humans at a startup before rage-building an open source competitor."
   date: 2011-02-03
   tags:
     - "coders"
     - "haters"
     - "startups"
-  original_url: "https://web.archive.org/web/20130301131432/http://claylo.posterous.com/talk-more-hate-less"
+  original_url: "https://claylo.tumblr.com/post/3107147154/talk-more-hate-less"
+  readingTime: "1 min read"
+
+2011-02-04-howdy-tumblr.md:
+  description: "Moving to Tumblr because the people I want to read are already here."
+  date: 2011-02-04
+  source: medium
+  tags:
+    - "blogging"
+    - "tumblr"
+    - "posterous"
+  original_url: "https://medium.com/claylo/howdy-tumblr-8286d7fd072d"
+  readingTime: "1 min read"
+
+2011-02-05-bullshit-talks-code-walks.md:
+  description: "More pull requests, less mailing list chatter -- most projects would kill for that problem."
+  date: 2011-02-05
+  source: medium
+  tags:
+    - "open-source"
+    - "pull-requests"
+    - "redis"
+  original_url: "https://medium.com/claylo/bullshit-talks-code-walks-dc22fc3f91ca"
+  readingTime: "2 min read"
+
+2011-02-06-anticipation-of-interruption.md:
+  description: "The mere expectation of being interrupted kills maker-mode depth."
+  date: 2011-02-06
+  source: medium
+  tags:
+    - "startups"
+    - "productivity"
+    - "makers"
+    - "mashery"
+  original_url: "https://medium.com/claylo/the-anticipation-of-interruption-d455d05ec775"
+  readingTime: "2 min read"
+
+2011-02-12-on-continuous-deployment.md:
+  description: "What continuous deployment actually requires, and why most companies never retrofit it."
+  date: 2011-02-12
+  source: medium
+  tags:
+    - "continuous-deployment"
+    - "devops"
+    - "testing"
+    - "startups"
+  original_url: "https://medium.com/claylo/on-continuous-deployment-1552e42652cf"
+  readingTime: "3 min read"
+
+2011-03-13-disconnecting-facebook-twitter.md:
+  description: "Cutting the tweet-to-Facebook bridge because nobody there asked for my soapbox."
+  date: 2011-03-13
+  source: medium
+  tags:
+    - "facebook"
+    - "twitter"
+    - "social-media"
+  original_url: "https://medium.com/claylo/disconnecting-facebook-and-twitter-f2eb14b57f4f"
+  readingTime: "2 min read"
+
+2011-04-01-omfgauth.md:
+  description: "OAuth's promise of a simple standard has failed -- do what's right for your use case."
+  date: 2011-04-01
+  source: medium
+  tags:
+    - "oauth"
+    - "apis"
+    - "authentication"
+    - "security"
+    - "mashery"
+    - "greatest-hits"
+  original_url: "https://medium.com/claylo/omfgauth-7772e74da54"
+  readingTime: "7 min read"
+
+2011-04-20-winning-some-losing-some.md:
+  description: "A timeline of wins, losses, and draws from high school to Jexy -- proof that scrappy persistence beats a clean record."
+  date: 2011-04-20
+  source: medium
+  tags:
+    - "startups"
+  original_url: "https://medium.com/claylo/winning-some-losing-some-1df0098c27c1"
+  draft: true
+  readingTime: "2 min read"
+
+2011-04-21-where-there-are-clouds-it-sometimes-rains.md:
+  description: "Cloud infrastructure goes down -- build for fault tolerance or deserve the outage."
+  date: 2011-04-21
+  source: tumblr
+  tags:
+    - "aws"
+    - "cloud-computing"
+    - "greatest-hits"
+    - "saas"
+    - "startups"
+  original_url: "https://claylo.tumblr.com/post/4817029650/where-there-are-clouds-it-sometimes-rains"
+  readingTime: "4 min read"
+
+2011-04-22-failure-is-not-an-option.md:
+  description: "The AWS EC2 outage and the tradeoffs you actually need to think about before it happens."
+  date: 2011-04-22
+  source: tumblr
+  tags:
+    - "saas"
+    - "cloud-computing"
+    - "startups"
+    - "aws"
+    - "greatest-hits"
+  original_url: "http://claylo.tumblr.com/post/4844798650/failure-is-not-an-option"
+  readingTime: "5 min read"
+
+2011-06-13-restful-routing.md:
+  description: "Let Apache handle routing instead of burning CPU cycles in your app."
+  date: 2011-06-13
+  source: medium
+  tags:
+    - "rest"
+    - "apache"
+    - "php"
+    - "routing"
+  original_url: "https://medium.com/claylo/restful-routing-locationmatch-forcetype-and-sethandler-dfc5a6a935be"
+  readingTime: "2 min read"
+
+2011-06-15-fucking-launch.md:
+  description: "Six months of perfecting everything except shipping -- just put something out there."
+  date: 2011-06-15
+  source: unpublished
+  tags:
+    - "startups"
+    - "launching"
+    - "jexy"
+    - "entrepreneurship"
+  draft: true
+  readingTime: "5 min read"
+
+2011-08-06-fundraising-the-gambler.md:
+  description: "Read the signals, know when to walk away, and don't confuse rapport with a check."
+  date: 2011-08-06
+  source: medium
+  tags:
+    - "startups"
+    - "fundraising"
+    - "jexy"
+    - "investors"
+  original_url: "https://medium.com/claylo/fundraising-lessons-from-the-gambler-c26dd2c7215d"
+  readingTime: "3 min read"
 
 2025-01-31-hello-again-world.md:
-  title: "Hello Again, World"
   description: "First post from the new workbench."
   date: 2025-01-31
-
+  readingTime: "2 min read"

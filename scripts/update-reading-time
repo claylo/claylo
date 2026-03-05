@@ -1,0 +1,111 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ---------------------------------------------------------------------------
+# update-reading-time — calculate reading time for .md files and write it
+# into each directory's frontmatter.yml
+#
+# Usage: ./update-reading-time [articles|projects]
+#   No args = update all directories that have a frontmatter.yml
+# ---------------------------------------------------------------------------
+
+REPO_ROOT="$(cd -P "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+WPM=200
+
+update_dir() {
+  local dir="$1"
+  local fmfile="${dir}/frontmatter.yml"
+
+  if [[ ! -f "$fmfile" ]]; then
+    echo "skip: no frontmatter.yml in ${dir}" >&2
+    return
+  fi
+
+  local tmpfile
+  tmpfile="$(mktemp)"
+  local updated=0
+
+  for mdfile in "${dir}"/*.md; do
+    [[ -f "$mdfile" ]] || continue
+    local basename
+    basename="$(basename "$mdfile")"
+    local words
+    words="$(wc -w < "$mdfile" | tr -d ' ')"
+    local minutes=$(( (words + WPM - 1) / WPM ))
+    [[ $minutes -lt 1 ]] && minutes=1
+    local reading_time="${minutes} min read"
+
+    # Use awk to insert or update readingTime in the entry for this file.
+    # An entry starts with "filename.md:" (no leading whitespace) and ends
+    # at the next unindented line or EOF.
+    awk -v key="${basename}:" -v rt="  readingTime: \"${reading_time}\"" '
+      BEGIN { in_block = 0; found_rt = 0; done_block = 0 }
+
+      # Start of target block
+      !in_block && $0 == key {
+        in_block = 1
+        found_rt = 0
+        done_block = 0
+        print
+        next
+      }
+
+      # Inside target block — a non-indented, non-empty line means new entry
+      in_block && !done_block && /^[^ \t]/ {
+        if (!found_rt) { print rt }
+        done_block = 1
+        in_block = 0
+        print
+        next
+      }
+
+      # Inside target block — blank line (block separator)
+      in_block && !done_block && /^$/ {
+        if (!found_rt) { print rt }
+        done_block = 1
+        in_block = 0
+        print
+        next
+      }
+
+      # Inside target block — existing readingTime line
+      in_block && !done_block && /^  readingTime:/ {
+        print rt
+        found_rt = 1
+        next
+      }
+
+      # Inside target block — any other indented line, pass through
+      in_block && !done_block { print; next }
+
+      # Everything else
+      { print }
+
+      END {
+        # If target block was the last entry with no trailing blank line
+        if (in_block && !done_block && !found_rt) { print rt }
+      }
+    ' "$fmfile" > "$tmpfile"
+
+    cp "$tmpfile" "$fmfile"
+    updated=$((updated + 1))
+    printf "  %-60s %3d words → %s\n" "$basename" "$words" "$reading_time"
+  done
+
+  rm -f "$tmpfile"
+  echo "updated ${updated} entries in ${fmfile}"
+}
+
+# ---------------------------------------------------------------------------
+
+if [[ $# -gt 0 ]]; then
+  for target in "$@"; do
+    update_dir "${REPO_ROOT}/${target}"
+  done
+else
+  # Find all directories containing a frontmatter.yml
+  for fmfile in "${SCRIPT_DIR}"/*/frontmatter.yml; do
+    [[ -f "$fmfile" ]] || continue
+    update_dir "$(dirname "$fmfile")"
+  done
+fi

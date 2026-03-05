@@ -18,12 +18,13 @@ This site uses:
 
 - **Astro** — static site generation
 - **Tailwind v4** — CSS-first configuration
-- **Berkeley Mono** — custom font cuts (LL01Display, LL02Code, LL03Text, LL04Caption)
+- **Atkinson Hyperlegible Next** — body text, designed for readability
+- **Berkeley Mono** — custom font cuts for headings, code, and captions
 - **Markdown** — plain Markdown with some build-time sugar sprinkled on top.
 
 ### A taste of Rust
 
-Here's the kind of thing I'm building these days, styled with [Dusty](https://github.com/claylo/zed-dusty) — my Zed theme:
+Here's the kind of thing I'm building these days, styled with [Dusty](https://github.com/claylo/dusty-zed) — my Zed theme:
 
 ```rust
 /// A builder for greeting messages.
