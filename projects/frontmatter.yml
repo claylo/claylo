@@ -51,6 +51,27 @@ actionista/v0.2.0.md:
   readingTime: "4 min read"
   draft: false
 
+building-in-the-open/index.md:
+  description: "Claude Code plugin for consistent editorial voice across documentation artifacts."
+  date: 2026-03-06
+  repo: "https://github.com/claylo/building-in-the-open"
+  project: building-in-the-open
+
+building-in-the-open/v1.0.0.md:
+  description: "Four writer personas, eight skills, one tone firewall. Teach your AI agent how to write docs you'd present at a conference."
+  date: 2026-03-06
+  project: building-in-the-open
+  version: "1.0.0"
+  author: Claude
+  tags:
+    - claude-code
+    - documentation
+    - tooling
+  repo: "https://github.com/claylo/building-in-the-open"
+  image: "/og/building-in-the-open-v1.0.0.png"
+  readingTime: "4 min read"
+  draft: false
+
 gh-coda/index.md:
   description: "GitHub CLI extension for declarative repository configuration. Settings as code."
   date: 2026-03-05
