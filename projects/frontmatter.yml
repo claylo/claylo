@@ -4,17 +4,30 @@ claylo-rs/index.md:
   repo: "https://github.com/claylo/claylo-rs"
   project: claylo-rs
 
-claylo-rs/v0.1.0.md:
-  description: "Initial release with Copier scaffolding, GitHub Actions CI, and Cargo workspace support."
-  date: 2025-01-15
+claylo-rs/v1.0.0-beta.1.md:
+  description: "Feature-complete beta with docs site, XDG config, interactive prompts, and 38 composable feature flags."
+  date: 2026-02-17
   project: claylo-rs
-  version: "0.1.0"
+  version: "1.0.0-beta.1"
   author: Claude
   tags:
     - rust
     - tooling
   repo: "https://github.com/claylo/claylo-rs"
-  readingTime: "2 min read"
+  readingTime: "4 min read"
+  draft: false
+
+claylo-rs/v1.0.0-beta.7.md:
+  description: "Dependency updates and Homebrew formula extraction from the CD workflow."
+  date: 2026-02-28
+  project: claylo-rs
+  version: "1.0.0-beta.7"
+  author: Claude
+  tags:
+    - rust
+    - tooling
+  repo: "https://github.com/claylo/claylo-rs"
+  readingTime: "1 min read"
   draft: false
 
 gh-coda/index.md:
