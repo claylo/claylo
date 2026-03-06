@@ -1,6 +1,38 @@
-claylo-rs.md:
-  title: claylo-rs
+claylo-rs/index.md:
   description: "Rust project template with batteries included. Copier-based scaffolding for new Rust projects."
   date: 2025-01-15
   repo: "https://github.com/claylo/claylo-rs"
-  readingTime: "1 min read"
+  project: claylo-rs
+
+claylo-rs/v0.1.0.md:
+  description: "Initial release with Copier scaffolding, GitHub Actions CI, and Cargo workspace support."
+  date: 2025-01-15
+  project: claylo-rs
+  version: "0.1.0"
+  author: Claude
+  tags:
+    - rust
+    - tooling
+  repo: "https://github.com/claylo/claylo-rs"
+  readingTime: "2 min read"
+  draft: false
+
+gh-coda/index.md:
+  description: "GitHub CLI extension for declarative repository configuration. Settings as code."
+  date: 2026-03-05
+  repo: "https://github.com/lovelesslabs/gh-coda"
+  project: gh-coda
+
+gh-coda/v0.2.0.md:
+  description: "Adds declarative repo description, topics, and GitHub Actions variables management."
+  date: 2026-03-05
+  project: gh-coda
+  version: "0.2.0"
+  author: Claude
+  tags:
+    - github
+    - cli
+    - devops
+  repo: "https://github.com/lovelesslabs/gh-coda"
+  readingTime: "3 min read"
+  draft: false
