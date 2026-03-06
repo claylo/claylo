@@ -169,6 +169,7 @@
   readingTime: "1 min read"
 
 2005-10-19-why-php-will-never-have-rails.md:
+  image: "/og/why-php-will-never-have-rails.png"
   description: "PHP has too many cooks and too much history for any one framework to unify the community like Rails did."
   date: 2005-10-19
   tags:
@@ -316,6 +317,7 @@
   readingTime: "2 min read"
 
 2006-02-16-walk-the-walk-before-talking-the-talk.md:
+  image: "/og/walk-the-walk-before-talking-the-talk.png"
   description: "Professional development is about discipline and humility, not frameworks and flame wars."
   date: 2006-02-16
   tags:
@@ -497,6 +499,7 @@
   readingTime: "3 min read"
 
 2006-06-14-teaching-by-example.md:
+  image: "/og/teaching-by-example.png"
   description: "Om Malik leaves Business 2.0 to start up -- now let's see if his own startup playbook holds up."
   date: 2006-06-14
   tags:
@@ -695,6 +698,7 @@
   readingTime: "1 min read"
 
 2007-08-12-php-did-not-cause-facebook-code-leakage.md:
+  image: "/og/php-did-not-cause-facebook-code-leakage.png"
   description: "Facebook leaked source code because of a config error, not because PHP is broken."
   date: 2007-08-12
   tags:
@@ -706,6 +710,7 @@
   readingTime: "8 min read"
 
 2007-09-11-free-beer-in-atlanta.md:
+  image: "/og/free-beer-in-atlanta.png"
   description: "Mashery recruits PHP devs at php|works with free beer and a shot at an iPod Touch."
   date: 2007-09-11
   tags:
@@ -736,6 +741,7 @@
   readingTime: "1 min read"
 
 2010-10-04-operation-hackbutt.md:
+  image: "/og/operation-hackbutt.png"
   description: "Two premium ergonomic chairs at a hackathon, because crappy chairs kill output."
   date: 2010-10-04
   tags:
@@ -748,6 +754,7 @@
   readingTime: "5 min read"
 
 2010-10-09-still-looking-for-a-blog-home.md:
+  image: "/og/still-looking-for-a-blog-home.png"
   description: "WordPress is out, Squarespace mobile sucks, and tumblr URLs are an embarrassment."
   date: 2010-10-09
   source: medium
@@ -781,6 +788,7 @@
   readingTime: "2 min read"
 
 2011-02-03-talk-more-hate-less.md:
+  image: "/og/talk-more-hate-less.png"
   description: "Talk to the humans at a startup before rage-building an open source competitor."
   date: 2011-02-03
   tags:
@@ -791,6 +799,7 @@
   readingTime: "1 min read"
 
 2011-02-04-howdy-tumblr.md:
+  image: "/og/howdy-tumblr.png"
   description: "Moving to Tumblr because the people I want to read are already here."
   date: 2011-02-04
   source: medium
@@ -802,6 +811,7 @@
   readingTime: "1 min read"
 
 2011-02-05-bullshit-talks-code-walks.md:
+  image: "/og/bullshit-talks-code-walks.png"
   description: "More pull requests, less mailing list chatter -- most projects would kill for that problem."
   date: 2011-02-05
   source: medium
@@ -813,6 +823,7 @@
   readingTime: "2 min read"
 
 2011-02-06-anticipation-of-interruption.md:
+  image: "/og/anticipation-of-interruption.png"
   description: "The mere expectation of being interrupted kills maker-mode depth."
   date: 2011-02-06
   source: medium
@@ -825,6 +836,7 @@
   readingTime: "2 min read"
 
 2011-02-12-on-continuous-deployment.md:
+  image: "/og/on-continuous-deployment.png"
   description: "What continuous deployment actually requires, and why most companies never retrofit it."
   date: 2011-02-12
   source: medium
@@ -837,6 +849,7 @@
   readingTime: "3 min read"
 
 2011-03-13-disconnecting-facebook-twitter.md:
+  image: "/og/disconnecting-facebook-twitter.png"
   description: "Cutting the tweet-to-Facebook bridge because nobody there asked for my soapbox."
   date: 2011-03-13
   source: medium
@@ -848,6 +861,7 @@
   readingTime: "2 min read"
 
 2011-04-01-omfgauth.md:
+  image: "/og/omfgauth.png"
   description: "OAuth's promise of a simple standard has failed -- do what's right for your use case."
   date: 2011-04-01
   source: medium
@@ -872,6 +886,7 @@
   readingTime: "2 min read"
 
 2011-04-21-where-there-are-clouds-it-sometimes-rains.md:
+  image: "/og/where-there-are-clouds-it-sometimes-rains.png"
   description: "Cloud infrastructure goes down -- build for fault tolerance or deserve the outage."
   date: 2011-04-21
   source: tumblr
@@ -885,6 +900,7 @@
   readingTime: "4 min read"
 
 2011-04-22-failure-is-not-an-option.md:
+  image: "/og/failure-is-not-an-option.png"
   description: "The AWS EC2 outage and the tradeoffs you actually need to think about before it happens."
   date: 2011-04-22
   source: tumblr
@@ -898,6 +914,7 @@
   readingTime: "5 min read"
 
 2011-06-13-restful-routing.md:
+  image: "/og/restful-routing.png"
   description: "Let Apache handle routing instead of burning CPU cycles in your app."
   date: 2011-06-13
   source: medium
@@ -922,6 +939,7 @@
   readingTime: "5 min read"
 
 2011-08-06-fundraising-the-gambler.md:
+  image: "/og/fundraising-the-gambler.png"
   description: "Read the signals, know when to walk away, and don't confuse rapport with a check."
   date: 2011-08-06
   source: medium
@@ -934,6 +952,7 @@
   readingTime: "3 min read"
 
 2025-01-31-hello-again-world.md:
+  image: "/og/hello-again-world.png"
   description: "First post from the new workbench."
   date: 2025-01-31
   readingTime: "2 min read"
