@@ -1,4 +1,4 @@
-# Fucking Launch
+# JFL
 
 I'm about six months into my new company, Jexy. I'm a sole founder who's spent a lot of time raising money, worrying about stuff that isn't important, and spending time on "perfecting things" I learned at my last company, Mashery.
 
@@ -38,7 +38,7 @@ So here's what I'd do, and what I'd advise my fellow entrepreneurs to do: fuckin
 
 Talking about launching too much means you're shoplifting the launch pootie. "You've got to have the talk."
 
-{{< youtube vW95YIpC6Rw >}}
+[![Jerry Maguire — "Shoplifting the pootie"](https://img.youtube.com/vi/vW95YIpC6Rw/0.jpg)](https://www.youtube.com/watch?v=vW95YIpC6Rw)
 
 ## Mistake Avoidance is a Mistake
 
@@ -74,4 +74,4 @@ Like I just did.
 
 ---
 
-*Editor's note, 2026: Morgan Freeman: But he did not just launch, which is why this post was never published.*
+*Editor's note, 2026: Morgan Freeman: But he did not just launch, which is why this post was never published, until today: March 5, 2026*

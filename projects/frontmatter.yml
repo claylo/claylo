@@ -30,6 +30,27 @@ claylo-rs/v1.0.0-beta.7.md:
   readingTime: "1 min read"
   draft: false
 
+actionista/index.md:
+  description: "Claude Code plugin for GitHub Actions. Tracks 118 actions with versions and migration diffs."
+  date: 2026-03-05
+  repo: "https://github.com/claylo/actionista"
+  project: actionista
+
+actionista/v0.2.0.md:
+  description: "Built-in MCP server for action version lookups, migration diffs that show what changed between major versions, and a self-updating daily index via Claude."
+  date: 2026-03-05
+  project: actionista
+  version: "0.2.0"
+  author: Claude
+  tags:
+    - github
+    - claude-code
+    - devops
+  repo: "https://github.com/claylo/actionista"
+  image: "/og/actionista-v0.2.0.png"
+  readingTime: "4 min read"
+  draft: false
+
 gh-coda/index.md:
   description: "GitHub CLI extension for declarative repository configuration. Settings as code."
   date: 2026-03-05
