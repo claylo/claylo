@@ -1,0 +1,31 @@
+cache = true
+max_cache_age = "1d"
+
+# Resolve root-relative links (e.g. /projects/claylo-rs/)
+# In rendered site mode, point this at dist/ instead
+root_dir = "."
+
+# Skip archive.org — those are intentional snapshots, not live links
+# Skip twitter/x embeds — widget.js doesn't resolve
+exclude = [
+  '^https?://web\.archive\.org',
+  '^https?://platform\.twitter\.com',
+  '/images/projects/',
+]
+
+# Don't hammer hosts
+max_concurrency = 8
+host_request_interval = "250ms"
+
+# Accept common non-error status codes
+accept = [200, 204, 301, 302, 403, 429]
+
+# Timeout per request
+timeout = 30
+
+# Retry transient failures
+max_retries = 3
+retry_wait_time = 5
+
+# Check fragments/anchors
+include_fragments = true

@@ -30,6 +30,32 @@ claylo-rs/v1.0.0-beta.7.md:
   readingTime: "1 min read"
   draft: false
 
+claylo-rs/v1.0.0.md:
+  description: "Stable release. 42 composable feature flags, four presets, library support, and a Copier template that generates production-ready Rust projects."
+  date: 2026-03-20
+  project: claylo-rs
+  version: "1.0.0"
+  author: Claude
+  tags:
+    - rust
+    - tooling
+  repo: "https://github.com/claylo/claylo-rs"
+  image: "/og/claylo-rs-v1.0.0.png"
+  readingTime: "6 min read"
+
+claylo-rs/v1.1.0.md:
+  description: "Progressive tests fixed to use the real update path, compact help restored, npm publish auth and OIDC provenance fallback."
+  date: 2026-03-26
+  project: claylo-rs
+  version: "1.1.0"
+  author: Claude
+  tags:
+    - rust
+    - tooling
+  repo: "https://github.com/claylo/claylo-rs"
+  readingTime: "3 min read"
+  draft: false
+
 actionista/index.md:
   description: "Claude Code plugin for GitHub Actions. Tracks 118 actions with versions and migration diffs."
   date: 2026-03-05
@@ -79,7 +105,7 @@ navel/index.md:
   project: navel
 
 navel/v1.0.0.md:
-  description: "347 versions, 80 commands, 21 hooks — a bash toolkit that reverse-engineers Claude Code by exploiting the one thing minifiers can't touch: string literals."
+  description: "347 versions, 80 commands, 21 hooks — a bash toolkit that explores Claude Code by reading the one thing minifiers can't touch: string literals."
   date: 2026-03-06
   project: navel
   version: "1.0.0"
@@ -87,10 +113,81 @@ navel/v1.0.0.md:
   tags:
     - claude-code
     - tooling
-    - reverse-engineering
+    - introspection
   repo: "https://github.com/claylo/navel"
   image: "/og/navel-v1.0.0.png"
   readingTime: "4 min read"
+  draft: false
+
+navel/v1.1.0.md:
+  description: "Offline docs as a typeset PDF or Dash docset, 448 env vars tracked, enhanced prompt capture — now you can read Claude Code's internals on a plane."
+  date: 2026-03-25
+  project: navel
+  version: "1.1.0"
+  author: Claude
+  tags:
+    - claude-code
+    - tooling
+    - introspection
+    - documentation
+  repo: "https://github.com/claylo/navel"
+  image: "/og/navel-v1.1.0.png"
+  readingTime: "5 min read"
+
+navel/v1.2.0.md:
+  description: "Build monitoring, MDX resilience, Wayback archival, and image format detection — the pipeline tells you when upstream docs break."
+  date: 2026-03-27
+  project: navel
+  version: "1.2.0"
+  author: Claude
+  tags:
+    - claude-code
+    - tooling
+    - introspection
+  repo: "https://github.com/claylo/navel"
+  image: "/og/navel-v1.2.0.png"
+  readingTime: "6 min read"
+  draft: false
+
+ah-ah-ah/index.md:
+  description: "Offline token counting for Claude and OpenAI models. Two backends, one trait, zero network calls."
+  date: 2026-03-19
+  repo: "https://github.com/claylo/ah-ah-ah"
+  project: ah-ah-ah
+
+ah-ah-ah/v0.1.0.md:
+  description: "Two backends, one trait, zero API calls. Greedy Aho-Corasick on 38,360 Claude tokens, exact o200k BPE, and a Decomposer trait for structured content."
+  date: 2026-03-19
+  project: ah-ah-ah
+  version: "0.1.0"
+  author: Claude
+  tags:
+    - rust
+    - tooling
+  repo: "https://github.com/claylo/ah-ah-ah"
+  image: "/og/ah-ah-ah-v0.1.0.png"
+  readingTime: "5 min read"
+  draft: false
+
+bito/index.md:
+  description: "Quality gate tooling for building-in-the-open artifacts. 18 deterministic writing checks, no API calls."
+  date: 2026-02-09
+  repo: "https://github.com/claylo/bito"
+  project: bito
+
+bito/v1.0.0.md:
+  description: "18 writing checks, zero API calls. Renamed from bito-lint, token counting extracted to ah-ah-ah, and a 1.0.0 milestone for the documentation quality gate."
+  date: 2026-03-25
+  project: bito
+  version: "1.0.0"
+  author: Claude
+  tags:
+    - rust
+    - tooling
+    - documentation
+  repo: "https://github.com/claylo/bito"
+  image: "/og/bito-v1.0.0.png"
+  readingTime: "5 min read"
   draft: false
 
 gh-coda/index.md:

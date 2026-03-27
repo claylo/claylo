@@ -874,6 +874,16 @@
     - "investors"
   original_url: "https://medium.com/claylo/fundraising-lessons-from-the-gambler-c26dd2c7215d"
   readingTime: "3 min read"
+2026-03-26-markdown-cosplay.md:
+  image: "/og/markdown-cosplay.png"
+  description: "MDX isn't Markdown. It's a React application wearing a .md extension like a fake mustache."
+  date: 2026-03-26
+  tags:
+    - markdown
+    - mdx
+    - documentation
+    - claude-code
+  readingTime: "8 min read"
 2025-01-31-hello-again-world.md:
   image: "/og/hello-again-world.png"
   description: "What started as a blank Astro site is now shipping agent-written release posts, per-project RSS feeds, and building tools in the open."

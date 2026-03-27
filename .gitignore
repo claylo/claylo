@@ -1,2 +1,7 @@
 in-progress/
 .DS_Store
+.lycheecache
+.private-journal
+.handoffs
+.claude/
+.bito.yaml

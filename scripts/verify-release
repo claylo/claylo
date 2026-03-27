@@ -1,0 +1,265 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ---------------------------------------------------------------------------
+# verify-release — deterministic pre-publish checks for release posts
+#
+# Usage: ./scripts/verify-release <release-file>
+#   e.g.: ./scripts/verify-release projects/navel/v1.0.0.md
+#         ./scripts/verify-release navel/v1.0.0.md
+# ---------------------------------------------------------------------------
+
+REPO_ROOT="$(cd -P "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+FM="${REPO_ROOT}/projects/frontmatter.yml"
+fail_count=0
+
+# ── Output helpers ───────────────────────────────────────────────────────
+
+pass()    { printf "  \033[32m✓\033[0m %s\n" "$1"; }
+fail()    { printf "  \033[31m✗\033[0m %s\n" "$1"; fail_count=$((fail_count + 1)); }
+faild()   { printf "  \033[31m✗\033[0m %s — %s\n" "$1" "$2"; fail_count=$((fail_count + 1)); }
+info()    { printf "  \033[36mℹ\033[0m %s\n" "$1"; }
+section() { printf "\n\033[1m%s\033[0m\n" "$1"; }
+
+# ── Frontmatter helpers ─────────────────────────────────────────────────
+
+fm() {
+  # fm <entry-key> <field> → value (empty string if missing)
+  KEY="$1" yq ".[env(KEY)].${2} // \"\"" "$FM" 2>/dev/null
+}
+
+fm_has() {
+  # fm_has <entry-key> → 0 if entry exists, 1 if missing
+  local t
+  t=$(KEY="$1" yq '.[env(KEY)] | type' "$FM" 2>/dev/null)
+  [[ "$t" == "!!map" ]]
+}
+
+# ── Usage ────────────────────────────────────────────────────────────────
+
+if [[ $# -lt 1 || "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+  cat <<EOF
+Usage: $(basename "$0") <release-file>
+  e.g.: $(basename "$0") projects/navel/v1.0.0.md
+        $(basename "$0") navel/v1.0.0.md
+EOF
+  exit 1
+fi
+
+# ── Parse input ──────────────────────────────────────────────────────────
+
+input="$1"
+input="${input#"${REPO_ROOT}/"}"
+input="${input#projects/}"
+
+if [[ ! "$input" =~ ^([a-z0-9-]+)/v([0-9a-zA-Z._-]+)\.md$ ]]; then
+  echo "Error: cannot parse project/version from '${input}'" >&2
+  echo "Expected: <project>/vX.Y.Z.md" >&2
+  exit 1
+fi
+
+PROJECT="${BASH_REMATCH[1]}"
+VERSION="${BASH_REMATCH[2]}"
+RELEASE="${REPO_ROOT}/projects/${PROJECT}/v${VERSION}.md"
+INDEX="${REPO_ROOT}/projects/${PROJECT}/index.md"
+FM_KEY="${PROJECT}/v${VERSION}.md"
+IDX_KEY="${PROJECT}/index.md"
+OG="${REPO_ROOT}/og/${PROJECT}-v${VERSION}.png"
+
+echo "Verifying: ${PROJECT} v${VERSION}"
+
+# ═════════════════════════════════════════════════════════════════════════
+# Pre-flight — project basics
+# ═════════════════════════════════════════════════════════════════════════
+
+section "Pre-flight"
+
+if [[ -f "$INDEX" ]]; then pass "index.md exists"; else fail "index.md missing"; fi
+
+if fm_has "$IDX_KEY"; then
+  pass "index.md frontmatter entry"
+
+  v=$(fm "$IDX_KEY" "description")
+  if [[ -n "$v" ]]; then pass "  description"; else fail "  description missing"; fi
+
+  v=$(fm "$IDX_KEY" "date")
+  if [[ "$v" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then pass "  date"; else faild "  date" "${v:-missing}"; fi
+
+  v=$(fm "$IDX_KEY" "repo")
+  if [[ "$v" =~ ^https://github\.com/ ]]; then pass "  repo"; else faild "  repo" "${v:-missing}"; fi
+
+  v=$(fm "$IDX_KEY" "project")
+  if [[ "$v" == "$PROJECT" ]]; then pass "  project"; else faild "  project" "expected ${PROJECT}, got ${v}"; fi
+else
+  fail "index.md frontmatter entry missing"
+fi
+
+# ═════════════════════════════════════════════════════════════════════════
+# File structure
+# ═════════════════════════════════════════════════════════════════════════
+
+section "File structure"
+
+if [[ -f "$RELEASE" ]]; then pass "v${VERSION}.md exists"; else fail "v${VERSION}.md missing"; fi
+
+# ═════════════════════════════════════════════════════════════════════════
+# Markdown content
+# ═════════════════════════════════════════════════════════════════════════
+
+section "Markdown content"
+
+if [[ -f "$RELEASE" ]]; then
+  h1=$(head -1 "$RELEASE")
+  escaped_ver="${VERSION//./\\.}"
+  if [[ "$h1" =~ ^#\ .+v?${escaped_ver} ]]; then
+    pass "H1 contains project + version"
+  else
+    faild "H1 pattern" "got: ${h1}"
+  fi
+
+  if grep -q "^## What's New" "$RELEASE"; then
+    pass "What's New section"
+  else
+    fail "What's New section"
+  fi
+
+  if grep -qE "^## (Getting Started|Upgrading)" "$RELEASE"; then
+    pass "Getting Started / Upgrading section"
+  else
+    fail "Getting Started / Upgrading section"
+  fi
+
+  if grep -q "^## How We Built This" "$RELEASE"; then
+    pass "How We Built This section"
+  else
+    fail "How We Built This section"
+  fi
+else
+  fail "H1 (file missing)"
+  fail "What's New (file missing)"
+  fail "Getting Started (file missing)"
+  fail "How We Built This (file missing)"
+fi
+
+# ═════════════════════════════════════════════════════════════════════════
+# Frontmatter
+# ═════════════════════════════════════════════════════════════════════════
+
+section "Frontmatter"
+
+if fm_has "$FM_KEY"; then
+  pass "entry exists"
+
+  # description: 120-160 chars
+  desc=$(fm "$FM_KEY" "description")
+  len=${#desc}
+  if [[ $len -ge 120 && $len -le 160 ]]; then
+    pass "description (${len} chars)"
+  else
+    faild "description length" "${len} chars (need 120-160)"
+  fi
+
+  # date
+  v=$(fm "$FM_KEY" "date")
+  if [[ "$v" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+    pass "date"
+  else
+    faild "date" "${v:-missing}"
+  fi
+
+  # project matches directory
+  v=$(fm "$FM_KEY" "project")
+  if [[ "$v" == "$PROJECT" ]]; then
+    pass "project"
+  else
+    faild "project" "expected ${PROJECT}, got ${v}"
+  fi
+
+  # version matches filename
+  v=$(fm "$FM_KEY" "version")
+  if [[ "$v" == "$VERSION" ]]; then
+    pass "version"
+  else
+    faild "version" "expected ${VERSION}, got ${v}"
+  fi
+
+  # author
+  v=$(fm "$FM_KEY" "author")
+  if [[ -n "$v" ]]; then
+    pass "author (${v})"
+  else
+    fail "author missing"
+  fi
+
+  # tags: 1-4
+  tc=$(KEY="$FM_KEY" yq '(.[env(KEY)].tags // []) | length' "$FM" 2>/dev/null)
+  if [[ $tc -ge 1 && $tc -le 4 ]]; then
+    pass "tags (${tc})"
+  else
+    faild "tags count" "${tc} (need 1-4)"
+  fi
+
+  # existing tags reference
+  existing=$(yq '.[] | select(.tags) | .tags[]' "$FM" 2>/dev/null | sort -u | tr '\n' ',' | sed 's/,$//')
+  info "existing tags: ${existing}"
+
+  # repo
+  v=$(fm "$FM_KEY" "repo")
+  if [[ "$v" =~ ^https://github\.com/ ]]; then
+    pass "repo"
+  else
+    faild "repo" "${v:-missing}"
+  fi
+
+  # image path
+  v=$(fm "$FM_KEY" "image")
+  expected="/og/${PROJECT}-v${VERSION}.png"
+  if [[ "$v" == "$expected" ]]; then
+    pass "image"
+  else
+    faild "image" "expected ${expected}, got ${v:-missing}"
+  fi
+
+  # readingTime
+  v=$(fm "$FM_KEY" "readingTime")
+  if [[ -n "$v" ]]; then
+    pass "readingTime (${v})"
+  else
+    fail "readingTime missing"
+  fi
+
+  # draft status — informational, not a gate
+  draft=$(fm "$FM_KEY" "draft")
+  if [[ "$draft" == "false" ]]; then
+    info "draft is already false"
+  else
+    info "draft: ${draft:-not set} (set to false when ready)"
+  fi
+
+else
+  fail "entry missing — all field checks skipped"
+fi
+
+# ═════════════════════════════════════════════════════════════════════════
+# OG image
+# ═════════════════════════════════════════════════════════════════════════
+
+section "OG image"
+
+if [[ -f "$OG" ]]; then
+  pass "${PROJECT}-v${VERSION}.png exists"
+else
+  fail "${PROJECT}-v${VERSION}.png missing from og/"
+fi
+
+# ═════════════════════════════════════════════════════════════════════════
+# Summary
+# ═════════════════════════════════════════════════════════════════════════
+
+echo ""
+if [[ $fail_count -eq 0 ]]; then
+  printf "\033[32mAll checks passed.\033[0m Ready to set draft: false\n"
+else
+  printf "\033[31m%d check(s) failed.\033[0m\n" "$fail_count"
+  exit 1
+fi
