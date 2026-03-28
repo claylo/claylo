@@ -10,7 +10,7 @@ root_dir = "."
 exclude = [
   '^https?://web\.archive\.org',
   '^https?://platform\.twitter\.com',
-  '/images/projects/',
+  '/og/',
 ]
 
 # Don't hammer hosts
